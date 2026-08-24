@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexum — Accesorios de autor</title>
+<meta name="description" content="Nexum. Piezas seleccionadas, entrega directa por Mercado Libre.">
+
+<!-- Tipografías: Fraunces (display) + Manrope (texto/UI) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="logo" aria-label="Nexum, inicio">
+      <!-- LOGO EDITABLE: reemplazá este texto por <img src="tu-logo.svg" alt="Nexum"> si tenés un logo propio -->
+      NEXUM
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#top">Inicio</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#footer">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="search">
+        <svg class="search__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="16.2" y1="16.2" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Buscar producto..." aria-label="Buscar producto">
+      </div>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Colección permanente</p>
+      <h1 class="hero__title">El detalle<br>es la firma.</h1>
+      <p class="hero__sub">Piezas seleccionadas una por una. Cada compra se concreta de forma segura a través de Mercado Libre.</p>
+      <a href="#tienda" class="btn btn--gold">Ver la tienda</a>
+    </div>
+    <div class="hero__line" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ TIENDA ============ -->
+  <section class="tienda" id="tienda">
+    <div class="tienda__head">
+      <h2>Tienda</h2>
+      <p>Tocá cualquier producto para ir directo a su publicación.</p>
+    </div>
+
+    <div class="filtros" id="filtros">
+      <!-- Las categorías se generan automáticamente desde script.js -->
+    </div>
+
+    <div class="grid" id="grid">
+      <!-- Las tarjetas de producto se generan automáticamente desde script.js -->
+    </div>
+
+    <p class="grid__empty" id="gridEmpty" hidden>No encontramos productos que coincidan con tu búsqueda.</p>
+  </section>
+
+  <!-- ============ POR QUÉ NEXUM ============ -->
+  <section class="porque" id="nosotros">
+    <h2>¿Por qué comprar en Nexum?</h2>
+    <div class="porque__grid">
+
+      <article class="porque__item">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Compra protegida</h3>
+        <p>Cada pago se procesa dentro de Mercado Libre, con toda su cobertura y garantía.</p>
+      </article>
+
+      <article class="porque__item">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="7" width="14" height="11" rx="1.2" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M17 10h2.4l1.6 2.4V18h-4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="7.5" cy="18.5" r="1.6" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="17.5" cy="18.5" r="1.6" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+        <h3>Envíos a todo el país</h3>
+        <p>Seguimiento en tiempo real desde que se despacha hasta que llega a tu puerta.</p>
+      </article>
+
+      <article class="porque__item">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-9.7-9.3C.7 8.1 2.4 4.8 5.8 4.2c2-.4 3.8.5 4.9 2.1a.4.4 0 0 0 .6 0c1.1-1.6 2.9-2.5 4.9-2.1 3.4.6 5.1 3.9 3.5 7.5C19.5 16.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        </svg>
+        <h3>Curaduría propia</h3>
+        <p>Seleccionamos cada producto por su calidad y su durabilidad, no por volumen.</p>
+      </article>
+
+      <article class="porque__item">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 4h11l5 5v11H4V4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M15 4v5h5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M8 13h8M8 16.5h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <h3>Atención directa</h3>
+        <p>Consultas por WhatsApp respondidas por una persona, no por un bot.</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <p class="logo logo--footer">NEXUM</p>
+      <p>Piezas seleccionadas. Entrega segura por Mercado Libre.</p>
+    </div>
+
+    <div class="footer__social">
+      <!-- Reemplazá los href="#" por tus enlaces reales -->
+      <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp" class="social">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram" class="social">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.5"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Mercado Libre" class="social">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 13.5c1 1.2 2.4 1.8 4.5 1.8s3.5-.6 4.5-1.8M8.5 9.8c.3-.5.9-.8 1.5-.8M15.5 9.8c-.3-.5-.9-.8-1.5-.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> Nexum. Todos los derechos reservados.</p>
+    <p>Publicaciones alojadas y procesadas por Mercado Libre.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
