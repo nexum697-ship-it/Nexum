@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: nexum697-ship-it/Nexum
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "productos"
+    label: "Productos"
+    folder: "productos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Precio", name: "precio", widget: "number" }
+      - { label: "Categoría", name: "categoria", widget: "string" }
+      - { label: "Link Mercado Libre", name: "link", widget: "string" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
